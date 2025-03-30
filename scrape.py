@@ -21,6 +21,18 @@ def scrape(url):
     title = soup.find("div", id="appHubAppName", class_="apphub_AppName").text.strip()
     result.update({"title" : title})
 
+    # Tags
+    tags = []
+    
+    tag_list = soup.find_all('a', {'class': 'app_tag'})
+    
+    if tag_list:
+        if len(tag_list) > 1:
+            for tag in tag_list:
+                tags.append(tag.text.strip())
+
+    result.update({"tags" : tags})
+
     return result
     
 
@@ -28,3 +40,4 @@ if __name__ == "__main__":
     result = scrape("https://store.steampowered.com/app/440/")
 
     print(result["title"])
+    print(result["tags"])

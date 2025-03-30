@@ -3,7 +3,7 @@
 
 By Trevor Corcoran
 
-Built for use in my Database class semester project. It aims to simply grab some essential data about steam games in an efficient manner.
+Built for use in my [Database class semester project](https://github.com/cmsc-vcu/cmsc408-sp2025-semproj-open-valve). It aims to simply grab some essential data about steam games in an efficient manner.
 
 ### Tools
 
@@ -14,11 +14,11 @@ Built for use in my Database class semester project. It aims to simply grab some
 
 You will need to have Poetry installed, along with a modern Python interpreter. Then run
 
-`poetry install`
+`poetry install` or `make install`
 
 With poetry having installed the correct dependencies, simply run
 
-`poetry run python scrape.py`
+`poetry run python scrape.py` or `make`
 
 ## Acknowledgement
 
