@@ -15,9 +15,16 @@ def scrape(url):
 
     soup = bs(html_download, "html.parser")
 
-    print(soup.prettify())
+    result = {}
 
+    # Game title
+    title = soup.find("div", id="appHubAppName", class_="apphub_AppName").text.strip()
+    result.update({"title" : title})
+
+    return result
+    
 
 if __name__ == "__main__":
-    scrape("https://www.trevorcorc.com/")
+    result = scrape("https://store.steampowered.com/app/440/")
 
+    print(result["title"])
