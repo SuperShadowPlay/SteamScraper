@@ -19,3 +19,8 @@ You will need to have Poetry installed, along with a modern Python interpreter. 
 With poetry having installed the correct dependencies, simply run
 
 `poetry run python scrape.py`
+
+## Acknowledgement
+
+Thanks to @EthanStanks for their [SteamWebScraper](https://github.com/EthanStanks/SteamWebScraper/) project. No license was given,
+so I will mention them here as I lifted some of the code and took much inspiration from their example.
