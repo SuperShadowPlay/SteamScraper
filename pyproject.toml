@@ -1,0 +1,18 @@
+[project]
+name = "steamscraper"
+version = "0.1.0"
+description = "Uses beautifulsoup to scrape Steam store pages for tag information"
+authors = [
+    {name = "SuperShadowPlay",email = "supershadowplay@gmail.com"}
+]
+license = {text = "MIT License"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
